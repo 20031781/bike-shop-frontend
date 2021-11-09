@@ -74,8 +74,7 @@ const Home = () => (
                                 </svg>
                             </a>
 
-                            <a className="social-link social-link--instagram" id="instagram"
-                               href="https://www.instagram.com/loreappe/">
+                            <a className="social-link social-link--instagram" id="instagram" target="_blank" href="https://www.instagram.com/loreappe/">
                                 <svg className="social-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
                                     <title>instagram</title>
                                     <defs>
