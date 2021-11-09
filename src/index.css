@@ -1,0 +1,482 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: darkslategrey;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.nav-bar .logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.nav-bar .logo img {
+    object-fit: contain;
+    width: 80px;
+}
+
+.nav-bar a,
+.nav-bar button {
+    font-size: 1em;
+    text-decoration: none; /* toglie il sottolineato */
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+.nav-bar a:hover,
+.nav-bar a.active,
+.nav-bar button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.home {
+    width: 100vw;
+    min-height: 100vh;
+    background: url(/src/sfondo.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+}
+
+.home-heading {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.home-heading h2 {
+    display: inline;
+    background-color: white;
+    border-radius: 20px;
+    padding: 6px 15px;
+    font-size: 24px;
+    font-weight: 800;
+    margin-right: 100px;
+}
+
+.home-heading a {
+    text-decoration: none;
+    color: black;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    background: linear-gradient(to top, darkslategrey, #242833, transparent);
+}
+
+.home-content {
+    padding: 100px;
+    background: linear-gradient(darkslategrey, darkolivegreen);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.home-content h2 {
+    font-size: 3em;
+    color: white;
+}
+
+.home-content p {
+    font-size: 1em;
+    color: white;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.store,
+.card,
+.signup,
+.login {
+    margin: 0 auto;
+    padding: 150px;
+    width: 80%;
+}
+
+.store p {
+    text-align: center;
+    color: white;
+}
+
+.searchbar {
+    width: 250px;
+    float: right;
+    margin: -100px;
+}
+
+.bike-form,
+.login-form,
+.signup-form {
+    width: 400px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.bike-form {
+    float: right;
+}
+
+.bike-form label {
+    font-size: 14px;
+}
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+    margin: 2px 0 10px;
+    resize: none;
+}
+
+.about {
+    padding-top: 150px;
+    display: flex;
+}
+
+.about p {
+    color: white;
+    text-align: center;
+    margin: -20px 0 25px;
+}
+
+/* se si vuole visualizzare nella home => de-commentare
+.footer-home {
+    z-index: 2;
+}
+ */
+
+.about div {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1000px;
+    height: 740px;
+    padding: 10px 0 70px;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.about-form {
+    width: 750px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.about-form input[type='text'],
+input[type='password'],
+input[type='checkbox'],
+select,
+textarea {
+    padding: 5px;
+    margin: 6px 0 16px;
+}
+
+input[type='button'],
+input[type='submit'] {
+    background-color: darkslategrey;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 2px;
+}
+
+input[type='button']:hover,
+input[type='submit']:hover {
+    background-color: #45a049;
+}
+
+.bike-list,
+.store-list {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.store-list {
+    width: 100%;
+}
+
+.sell {
+    margin: 0 auto;
+    padding-top: 150px;
+    position: relative;
+    width: 75%;
+}
+
+.sell p {
+    color: white;
+}
+
+.bike-card {
+    width: 250px;
+    height: 400px;
+    background-color: white;
+    padding: 5px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 15px;
+    position: relative;
+}
+
+.bike-content h3 {
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+
+.bike-content p {
+    font-size: 12px;
+    text-align: left;
+    height: 100%;
+    padding: 0 0 0 10px;
+    margin: 4px 0;
+    color: black;
+}
+
+button {
+    background-color: inherit;
+    border: none;
+}
+
+.bike-buttons {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-around;
+    padding: 15px 0;
+}
+
+.bike-buttons button {
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.edit-form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border-radius: 20px;
+    width: 400px;
+    height: 170px;
+    background-color: white;
+    padding: 10px;
+    z-index: 10;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.icons {
+    width: 15px;
+    height: 15px;
+}
+
+.login,
+.signup {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login p,
+.signup p {
+    text-align: center;
+}
+
+.login button,
+.signup button {
+    width: 100%;
+    background-color: darkslategrey;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 2px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.modal-bg {
+    position: fixed;
+    opacity: 0.3;
+    inset: 0;
+    z-index: 2;
+    background-color: black;
+}
+
+.modal {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.footer-home {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    color: white;
+}
+
+.loader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+/* Da qua in giù è css per il "footer2" */
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 0.4s ease-out;
+    margin: 500px 500px;
+}
+
+.wrapper__links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.social-link--linkedin {
+    color: #2d76b0;
+}
+
+.social-link--github {
+    color: #000;
+}
+
+.social-link--instagram {
+    color: #9a2970;
+}
+
+.social-link--dribbble {
+    color: #b53561;
+}
+
+.social-link .social-svg {
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+.social-link .social-svg .social-group__icon {
+    fill: #191308;
+    transition: all 0.2s;
+}
+
+.social-link .social-svg .social-group__inner-circle {
+    fill: transparent;
+    transition: all 0.2s;
+}
+
+.social-link .social-svg .social-group__outline {
+    stroke: #191308;
+    transform-origin: 50% 50%;
+    transition: all 0.2s;
+}
+
+.social-link .social-svg:hover .social-group__icon, .social-link .social-svg:active .social-group__icon, .social-link .social-svg:focus .social-group__icon {
+    fill: #fffbfa;
+    transition: all 0.45s;
+}
+
+.social-link .social-svg:hover .social-group__inner-circle, .social-link .social-svg:active .social-group__inner-circle, .social-link .social-svg:focus .social-group__inner-circle {
+    fill: currentColor;
+    transition: all 0.45s;
+}
+
+.social-link .social-svg:hover .social-group__inner-circle--instagram, .social-link .social-svg:active .social-group__inner-circle--instagram, .social-link .social-svg:focus .social-group__inner-circle--instagram {
+    fill: url(#simpleInsta) !important;
+}
+
+.social-link .social-svg:hover .social-group__outline, .social-link .social-svg:active .social-group__outline, .social-link .social-svg:focus .social-group__outline {
+    stroke: currentColor;
+    transform: scale(1.1);
+    transition: all 0.45s;
+}
