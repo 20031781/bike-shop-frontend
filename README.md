@@ -23,4 +23,4 @@ Avviare il frontend con `npm start`.
 - [Sequelize](https://sequelize.org/master/index.html)
 
 ### Link al video YouTube
-...
+[bike-shop-spiegazione](https://www.youtube.com/watch?v=lEgUJvarIyQ)
