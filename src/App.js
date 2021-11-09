@@ -6,7 +6,6 @@ import Loading from "./components/Loading";
 import Footer from "./components/Footer";
 import "./index.css";
 
-
 // const Home = lazy(() => import("./components/Home")); warning sull'assegnamento delle promise quindi aggiungo :
 const Home = lazy(() => import("./components/Home").then(({default: Home}) => ({default: Home})));
 const Store = lazy(() => import("./components/store").then(({default: store}) => ({default: store})));
