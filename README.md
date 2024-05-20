@@ -1,6 +1,10 @@
-# bike-shop-fronted
-
 ![GitHub repo size](https://img.shields.io/github/repo-size/20031781/bike-shop-frontend)
+![GitHub language count](https://img.shields.io/github/languages/count/20031781/bike-shop-frontend)
+![GitHub top language](https://img.shields.io/github/languages/top/20031781/bike-shop-frontend)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/20031781/bike-shop-frontend)
+![GitHub last commit](https://img.shields.io/github/last-commit/20031781/bike-shop-frontend)
+
+# bike-shop-fronted
 
 ## Descrizione
 
