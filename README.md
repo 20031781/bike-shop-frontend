@@ -1,5 +1,7 @@
 # bike-shop-fronted
 
+![GitHub repo size](https://img.shields.io/github/repo-size/20031781/bike-shop-frontend)
+
 ## Descrizione
 
 Sito web per _vendere e noleggiare moto_.
